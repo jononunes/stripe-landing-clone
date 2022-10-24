@@ -1,0 +1,64 @@
+@use "./mixin.scss" as *;
+
+.paymentsContainer {
+  background-color: #f6f9fc;
+  height: 100vh;
+
+  .paymentsTextContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 17rem;
+    padding-top: 6rem;
+
+    .heading {
+      color: $clr-secondary;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .title {
+      color: $clr-primary;
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: -2px;
+    }
+
+    .textContainer {
+      display: flex;
+      gap: 3rem;
+
+      .text {
+        font-size: 18px;
+        font-weight: 500;
+        color: #425466;
+        line-height: 30px;
+        letter-spacing: -1px;
+
+        .link {
+          color: $clr-secondary;
+          font-weight: 600;
+          transition: 0.2s;
+
+          &:hover {
+            color: $clr-primary;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+
+    .btn {
+      @include btn($clr-secondary);
+      width: fit-content;
+
+      &:hover {
+        background-color: $clr-primary;
+        color: #fff;
+      }
+    }
+
+    .btn > .arrow {
+      @include arrow(#fff);
+    }
+  }
+}
