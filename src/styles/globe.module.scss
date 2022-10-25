@@ -1,0 +1,69 @@
+@use "./mixin.scss" as *;
+
+.globeBG {
+  height: 90vh;
+  transform: skewY(-7deg);
+  background-color: $clr-primary;
+}
+
+.globeContainer {
+  margin: 5rem 17rem;
+  position: absolute;
+  margin-top: -30rem;
+
+  .heading {
+    color: $clr-tertiary;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+  }
+
+  .text {
+    color: #adbdcc;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -1px;
+
+    a {
+      color: $clr-tertiary;
+      transition: 0.2s;
+
+      &:hover {
+        color: #fff;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  .columnContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+    gap: 2.5rem;
+
+    .columnTitle {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+    }
+
+    .columnText {
+      color: #adbdcc;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}
+
+.globeBGEnd {
+  background-color: $clr-primary;
+  height: 40vh;
+  margin-top: -10rem;
+}

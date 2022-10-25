@@ -1,0 +1,50 @@
+@use "./mixin.scss" as *;
+
+.whyStripeContainer {
+  margin: 10rem 17rem;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    color: $clr-secondary;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .title {
+    color: $clr-primary;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+  }
+
+  .columnContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+    gap: 1.5rem;
+
+    .columnHeading {
+      color: $clr-primary;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .text {
+      color: #425466;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      a {
+        color: $clr-secondary;
+        font-weight: 600;
+        transition: 0.2s;
+
+        &:hover {
+          color: $clr-primary;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
