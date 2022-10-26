@@ -13,6 +13,9 @@
     @media screen and (max-width: 900px) {
       margin: 0 2rem;
     }
+    @media screen and (max-width: 600px) {
+      margin: 0 1rem;
+    }
 
     .heading {
       color: $clr-secondary;
@@ -25,11 +28,20 @@
       font-size: 40px;
       font-weight: 600;
       letter-spacing: -2px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 35px;
+      }
     }
 
     .textContainer {
       display: flex;
       gap: 3rem;
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
 
       .text {
         font-size: 18px;
@@ -37,6 +49,10 @@
         color: #425466;
         line-height: 30px;
         letter-spacing: -1px;
+
+        @media screen and (max-width: 600px) {
+          font-size: 17px;
+        }
 
         .link {
           color: $clr-secondary;

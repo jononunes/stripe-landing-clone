@@ -8,6 +8,10 @@
     margin: 2rem 2rem;
   }
 
+  @media screen and (max-width: 600px) {
+    margin: 2rem 1rem;
+  }
+
   .navbar {
     display: flex;
     align-items: center;
@@ -143,12 +147,20 @@
       @media screen and (max-width: 900px) {
         font-size: 70px;
       }
+
+      @media screen and (max-width: 600px) {
+        font-size: 60px;
+      }
     }
 
     .text {
       font-size: 20px;
       color: #425466;
       z-index: 1;
+
+      @media screen and (max-width: 600px) {
+        font-size: 15px;
+      }
     }
 
     .buttonContainer {
@@ -190,7 +202,16 @@
   row-gap: 30px;
   margin: 7rem 0rem;
 
+  @media screen and (max-width: 600px) {
+    grid: auto/repeat(2, 1fr);
+    margin-left: -1rem;
+  }
+
   .partnerLogo {
     height: 4.5rem;
+
+    @media screen and (max-width: 600px) {
+      height: 3.5rem;
+    }
   }
 }
