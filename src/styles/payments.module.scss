@@ -32,6 +32,10 @@
       @media screen and (max-width: 600px) {
         font-size: 35px;
       }
+
+      @media screen and (max-width: 400px) {
+        font-size: 28px;
+      }
     }
 
     .textContainer {
@@ -52,6 +56,10 @@
 
         @media screen and (max-width: 600px) {
           font-size: 17px;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: 18px;
         }
 
         .link {

@@ -24,6 +24,10 @@
     font-size: 40px;
     font-weight: 600;
     letter-spacing: -2px;
+
+    @media screen and (max-width: 400px) {
+      font-size: 30px;
+    }
   }
 
   .columnContainer {
