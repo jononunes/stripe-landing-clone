@@ -26,10 +26,21 @@
     height: 0vh;
   }
 
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .columnOne {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+      display: grid;
+      grid-template-rows: auto;
+      grid-area: auto/span 2;
+    }
 
     .logoContainer {
       display: flex;
@@ -74,7 +85,8 @@
     }
   }
 
-  .column {
+  .column,
+  .finalColumn {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -97,6 +109,23 @@
   }
 }
 
+.finalColumn {
+  @media screen and (max-width: 600px) {
+    display: grid !important;
+    grid: inherit;
+    grid-area: auto/span 2;
+  }
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .footerBGEnd {
   background-color: #f6f9fc;
   height: 50vh;
@@ -105,5 +134,9 @@
 
   @media screen and (max-width: 900px) {
     height: 65vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 115vh;
   }
 }
