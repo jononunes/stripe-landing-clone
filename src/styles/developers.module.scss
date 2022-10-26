@@ -5,6 +5,10 @@
   transform: skewY(-7deg);
   background-color: $clr-primary;
   margin-top: -110px;
+
+  @media screen and (max-width: 900px) {
+    height: 95vh;
+  }
 }
 
 .lineSection {
@@ -44,6 +48,11 @@
   position: absolute;
   margin: 0 17rem;
   margin-top: -50rem;
+
+  @media screen and (max-width: 900px) {
+    margin: 0 2rem;
+    margin-top: -60rem;
+  }
 
   .developersLeftColumn {
     .heading {
@@ -86,6 +95,10 @@
       flex-direction: row;
       gap: 2.5rem;
       margin-top: 6.5rem;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
 
       .extraTitle {
         color: #fff;

@@ -5,6 +5,10 @@
   transform: skewY(-7deg);
   background-color: #f6f9fc;
   z-index: 0;
+
+  @media screen and (max-width: 900px) {
+    height: 30vh;
+  }
 }
 
 .footerContainer {
@@ -16,6 +20,11 @@
   gap: 5rem;
   grid-template-columns: repeat(4, 1fr);
   height: 95vh;
+
+  @media screen and (max-width: 900px) {
+    margin: -10rem 2rem;
+    height: 0vh;
+  }
 
   .columnOne {
     display: flex;
@@ -93,4 +102,8 @@
   height: 50vh;
   margin-top: -7rem;
   z-index: 0;
+
+  @media screen and (max-width: 900px) {
+    height: 65vh;
+  }
 }

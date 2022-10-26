@@ -7,10 +7,9 @@ export default function GetStarted() {
         <div className={s.mainColumn}>
           <h1 className={s.title}>Ready to get started?</h1>
           <p className={s.mainText}>
-            Explore <a href="#">Stripe Payments</a> or create an account <br />
-            instantly and start accepting payments. You can <br />
-            also contact us to design a custom package for <br />
-            your business.
+            Explore <a href="#">Stripe Payments</a> or create an account
+            instantly and start accepting payments. You can also contact us to
+            design a custom package for your business.
           </p>
           <div className={s.buttonContainer}>
             <button className={s.startBtn}>
@@ -21,23 +20,25 @@ export default function GetStarted() {
             </button>
           </div>
         </div>
-        <div className={s.detailColumn}>
-          <h2 className={s.detailTitle}>Always know what you pay</h2>
-          <p className={s.detailText}>
-            Integrated per-transaction pricing with no hidden fees.
-          </p>
-          <button className={s.contactBtn}>
-            Pricing details<span className={s.arrow}></span>
-          </button>
-        </div>
-        <div className={s.detailColumn}>
-          <h2 className={s.detailTitle}>Start your integration</h2>
-          <p className={s.detailText}>
-            Get up and running with Stripe in as little as 10 minutes.
-          </p>
-          <button className={s.contactBtn}>
-            API reference<span className={s.arrow}></span>
-          </button>
+        <div className={s.detailsContainer}>
+          <div className={s.detailColumn}>
+            <h2 className={s.detailTitle}>Always know what you pay</h2>
+            <p className={s.detailText}>
+              Integrated per-transaction pricing with no hidden fees.
+            </p>
+            <button className={s.contactBtn}>
+              Pricing details<span className={s.arrow}></span>
+            </button>
+          </div>
+          <div className={s.detailColumn}>
+            <h2 className={s.detailTitle}>Start your integration</h2>
+            <p className={s.detailText}>
+              Get up and running with Stripe in as little as 10 minutes.
+            </p>
+            <button className={s.contactBtn}>
+              API reference<span className={s.arrow}></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
