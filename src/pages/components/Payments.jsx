@@ -11,9 +11,9 @@ export default function Payments() {
           </h1>
           <div className={s.textContainer}>
             <p className={s.text}>
-              We bring together everything that’s required to build <br />{" "}
+              We bring together everything that&apos;s required to build <br />{" "}
               websites and apps that accept payments and send payouts <br />{" "}
-              globally. Stripe's products power payments for{" "}
+              globally. Stripe&apos;s products power payments for{" "}
               <a href="#" className={s.link}>
                 online and in-
                 <br />

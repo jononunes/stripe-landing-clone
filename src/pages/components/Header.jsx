@@ -36,7 +36,8 @@ export default function Header() {
             </h1>
             <p className={s.text}>
               Millions of companies of all sizes—from startups to Fortune <br />
-              500s—use Stripe's software and APIs to accept payments, <br />
+              500s—use Stripe&apos;s software and APIs to accept payments,{" "}
+              <br />
               send payouts, and manage their businesses online.
             </p>
             <div className={s.buttonContainer}>

@@ -15,11 +15,11 @@ export default function Developers() {
         <div className={s.developersLeftColumn}>
           <h2 className={s.heading}>Designed for developers</h2>
           <h1 className={s.title}>
-            The world's most powerful <br /> and easy-to-use APIs
+            The world&apos;s most powerful <br /> and easy-to-use APIs
           </h1>
           <p className={s.text}>
             We agonize over the right abstractions so your teams <br />
-            don't need to stitch together disparate systems or <br />
+            don&apos;t need to stitch together disparate systems or <br />
             spend months integrating payments functionality.
           </p>
           <button className={s.btn}>
