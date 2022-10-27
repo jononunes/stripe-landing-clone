@@ -13,6 +13,7 @@
   border-radius: 10px;
   width: -webkit-fill-available;
   transition: 0.5s ease-in-out;
+  overflow: hidden;
 
   .mobileMenuTop {
     display: flex;
@@ -23,6 +24,20 @@
     .mobileMenuLogo {
       width: 60px;
       height: 25px;
+      transition: 0.2s ease-in-out;
+    }
+
+    .backButton {
+      display: flex;
+      align-items: center;
+      left: 5%;
+      transition: 0.2s ease-in-out;
+      position: absolute;
+      .backText {
+        padding-left: 3px;
+        font-size: 16px;
+        color: $clr-secondary;
+      }
     }
   }
 
@@ -134,4 +149,9 @@
 .mobileMenuOpen {
   opacity: 100%;
   top: 0;
+}
+
+.hideElement {
+  opacity: 0 !important;
+  left: 10% !important;
 }

@@ -1,14 +1,34 @@
+import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { MdArrowForwardIos } from "react-icons/md";
+import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 
 import s from "../../styles/mobilemenu.module.scss";
 
 export default function MobileMenu({ isOpen, toggleMobileMenu }) {
+  const [displaySection, setDisplaySection] = useState(0);
+
+  const changeSubSection = (index) => {
+    setDisplaySection(index);
+  };
   return (
     <div>
       <div className={`${s.mobileMenuContainer} ${isOpen && s.mobileMenuOpen}`}>
         <div className={s.mobileMenuTop}>
-          <img src="./logo(purple).png" className={s.mobileMenuLogo} />
+          <img
+            src="./logo(purple).png"
+            className={`${s.mobileMenuLogo} ${
+              displaySection !== 0 && s.hideElement
+            }`}
+          />
+          <div
+            className={`${s.backButton} ${
+              displaySection === 0 && s.hideElement
+            }`}
+            onClick={() => setDisplaySection(0)}
+          >
+            <MdArrowBackIos size={10} />
+            <p className={s.backText}>Back</p>
+          </div>
           <AiOutlineClose
             className={s.mobileCloseIcon}
             onClick={toggleMobileMenu}
@@ -18,7 +38,10 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
           <h2 className={s.menuTitle}>Products</h2>
           <div className={s.divider}></div>
           <ul className={s.productsList}>
-            <li className={s.productsListItem}>
+            <li
+              className={s.productsListItem}
+              onClick={() => setDisplaySection(1)}
+            >
               <div className={s.listItemTextContainer}>
                 <p className={s.listItemHeading}>Global Payments</p>
                 <p className={s.listItemText}>
