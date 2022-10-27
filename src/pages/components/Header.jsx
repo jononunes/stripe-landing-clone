@@ -1,3 +1,5 @@
+import { FiMenu } from "react-icons/fi";
+
 import s from "../../styles/header.module.scss";
 
 export default function Header() {
@@ -26,6 +28,9 @@ export default function Header() {
           <button className={s.navBtn}>
             Sign in<span className={s.arrow}></span>
           </button>
+          <div className={s.mobileButtonContainer}>
+            <FiMenu className={s.mobileMenuIcon} />
+          </div>
         </div>
 
         <div className={s.heroContainer}>

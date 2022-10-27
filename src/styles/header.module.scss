@@ -72,6 +72,24 @@
     .navBtn > .arrow {
       @include arrow(#fff);
     }
+
+    .mobileButtonContainer {
+      z-index: 1;
+      background-color: hsla(0, 0%, 100%, 0.2);
+      width: 50px;
+      border-radius: 40px;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
+
+      .mobileMenuIcon {
+        filter: invert(1);
+      }
+    }
   }
 }
 
