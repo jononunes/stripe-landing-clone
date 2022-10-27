@@ -111,21 +111,21 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <h2 className={s.subMenuTitle}>GLOBAL PAYMENTS</h2>
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
-                <img src="./Payments.png" alt="" className={s.subLinkIcon} />
+                <img src="./Payments.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Payments</h1>
                   <p className={s.subLinkText}>Online Payments</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Checkout.png" alt="" className={s.subLinkIcon} />
+                <img src="./Checkout.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Checkout</h1>
                   <p className={s.subLinkText}>Pre-built payments page</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Elements.png" alt="" className={s.subLinkIcon} />
+                <img src="./Elements.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Elements</h1>
                   <p className={s.subLinkText}>Customizable payments UIs</p>
@@ -133,7 +133,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./PaymentLinks.png"
+                  src="./PaymentLinks.PNG"
                   alt=""
                   className={s.subLinkIcon}
                 />
@@ -143,35 +143,35 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Radar.png" alt="" className={s.subLinkIcon} />
+                <img src="./Radar.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Radar</h1>
                   <p className={s.subLinkText}>Fraud &amp; risk management</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Connect.png" alt="" className={s.subLinkIcon} />
+                <img src="./Connect.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Connect</h1>
                   <p className={s.subLinkText}>Payments for platforms</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Billing.png" alt="" className={s.subLinkIcon} />
+                <img src="./Billing.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Billing</h1>
                   <p className={s.subLinkText}>Subscription management</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Invoicing.png" alt="" className={s.subLinkIcon} />
+                <img src="./Invoicing.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Invoicing</h1>
                   <p className={s.subLinkText}>Online invoices</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Terminal.png" alt="" className={s.subLinkIcon} />
+                <img src="./Terminal.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Terminal</h1>
                   <p className={s.subLinkText}>In-person payments</p>
@@ -187,21 +187,21 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <h2 className={s.subMenuTitle}>REVENUE AND FINANCIAL MANAGEMENT</h2>
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
-                <img src="./Billing.png" alt="" className={s.subLinkIcon} />
+                <img src="./Billing.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Billing</h1>
                   <p className={s.subLinkText}>Subscription Management</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Invoicing.png" alt="" className={s.subLinkIcon} />
+                <img src="./Invoicing.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Invoicing</h1>
                   <p className={s.subLinkText}>Online invoices</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Tax.png" alt="" className={s.subLinkIcon} />
+                <img src="./Tax.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Tax</h1>
                   <p className={s.subLinkText}>
@@ -211,7 +211,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./RevenueRecognition.png"
+                  src="./RevenueRecognition.PNG"
                   alt=""
                   className={s.subLinkIcon}
                 />
@@ -221,7 +221,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Sigma.png" alt="" className={s.subLinkIcon} />
+                <img src="./Sigma.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Sigma</h1>
                   <p className={s.subLinkText}>Custom reports</p>
@@ -229,7 +229,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./DataPipeline.png"
+                  src="./DataPipeline.PNG"
                   alt=""
                   className={s.subLinkIcon}
                 />
@@ -240,7 +240,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./FinancialConnections.png"
+                  src="./FinancialConnections.PNG"
                   alt=""
                   className={s.subLinkIcon}
                 />
@@ -250,21 +250,21 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Identity.png" alt="" className={s.subLinkIcon} />
+                <img src="./Identity.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Identity</h1>
                   <p className={s.subLinkText}>Online identity verification</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Atlas.png" alt="" className={s.subLinkIcon} />
+                <img src="./Atlas.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Atlas</h1>
                   <p className={s.subLinkText}>Startup incorporation</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Climate.png" alt="" className={s.subLinkIcon} />
+                <img src="./Climate.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Climate</h1>
                   <p className={s.subLinkText}>Carbon removal</p>
@@ -280,28 +280,28 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <h2 className={s.subMenuTitle}>BANKING-AS-A-SERVICE</h2>
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
-                <img src="./Connect.png" alt="" className={s.subLinkIcon} />
+                <img src="./Connect.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Connect</h1>
                   <p className={s.subLinkText}>Payments for platforms</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Capital.png" alt="" className={s.subLinkIcon} />
+                <img src="./Capital.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Capital</h1>
                   <p className={s.subLinkText}>Business financing</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Issuing.png" alt="" className={s.subLinkIcon} />
+                <img src="./Issuing.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Issuing</h1>
                   <p className={s.subLinkText}>Card creation</p>
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Treasury.png" alt="" className={s.subLinkIcon} />
+                <img src="./Treasury.PNG" alt="" className={s.subLinkIcon} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Treasury</h1>
                   <p className={s.subLinkText}>Banking-as-a-service</p>
@@ -318,7 +318,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
                 <img
-                  src="./Ecommerce.png"
+                  src="./Ecommerce.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -327,14 +327,14 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Saas.png" alt="" className={s.subLinkIconSmall} />
+                <img src="./Saas.PNG" alt="" className={s.subLinkIconSmall} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Saas</h1>
                 </div>
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./Marketplaces.png"
+                  src="./Marketplaces.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -344,7 +344,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./EmbeddedFinance.png"
+                  src="./EmbeddedFinance.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -354,7 +354,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./Platforms.png"
+                  src="./Platforms.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -364,7 +364,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./CreatorEconomy.png"
+                  src="./CreatorEconomy.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -373,14 +373,14 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Crypto.png" alt="" className={s.subLinkIconSmall} />
+                <img src="./Crypto.PNG" alt="" className={s.subLinkIconSmall} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Crypto</h1>
                 </div>
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./Enterprise.png"
+                  src="./Enterprise.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -396,7 +396,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
                 <img
-                  src="./AppMarketplace.png"
+                  src="./AppMarketplace.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -406,7 +406,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./ProfessionalServices.png"
+                  src="./ProfessionalServices.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -416,7 +416,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./PartnerEcosystem.png"
+                  src="./PartnerEcosystem.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -435,7 +435,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
                 <img
-                  src="./Documentation.png"
+                  src="./Documentation.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -480,7 +480,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
                 <img
-                  src="./FullAPIReference.png"
+                  src="./FullAPIReference.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -490,7 +490,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./APIStatus.png"
+                  src="./APIStatus.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -500,7 +500,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./APIChangelog.png"
+                  src="./APIChangelog.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -510,7 +510,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./BuildAStripeApp.png"
+                  src="./BuildAStripeApp.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -528,7 +528,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
                 <img
-                  src="./SupportCenter.png"
+                  src="./SupportCenter.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -538,7 +538,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./SupportPlans.png"
+                  src="./SupportPlans.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -547,14 +547,14 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Guides.png" alt="" className={s.subLinkIconSmall} />
+                <img src="./Guides.PNG" alt="" className={s.subLinkIconSmall} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Guides</h1>
                 </div>
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./CustomerStories.png"
+                  src="./CustomerStories.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -563,14 +563,14 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
                 </div>
               </li>
               <li className={s.subMenuItem}>
-                <img src="./Blog.png" alt="" className={s.subLinkIconSmall} />
+                <img src="./Blog.PNG" alt="" className={s.subLinkIconSmall} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Blog</h1>
                 </div>
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./AnnualConference.png"
+                  src="./AnnualConference.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -580,7 +580,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./ContactSales.png"
+                  src="./ContactSales.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -592,14 +592,14 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
             </ul>
             <ul className={s.subMenuList}>
               <li className={s.subMenuItem}>
-                <img src="./Jobs.png" alt="" className={s.subLinkIconSmall} />
+                <img src="./Jobs.PNG" alt="" className={s.subLinkIconSmall} />
                 <div className={s.subLinkTextContainer}>
                   <h1 className={s.subLinkHeading}>Jobs</h1>
                 </div>
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./Newsroom.png"
+                  src="./Newsroom.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -609,7 +609,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./StripePress.png"
+                  src="./StripePress.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
@@ -619,7 +619,7 @@ export default function MobileMenu({ isOpen, toggleMobileMenu }) {
               </li>
               <li className={s.subMenuItem}>
                 <img
-                  src="./BecomeAPartner.png"
+                  src="./BecomeAPartner.PNG"
                   alt=""
                   className={s.subLinkIconSmall}
                 />
