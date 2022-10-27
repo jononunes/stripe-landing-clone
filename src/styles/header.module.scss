@@ -107,6 +107,10 @@
   @media screen and (max-width: 900px) {
     height: 50vh;
   }
+
+  @media screen and (max-width: 400px) {
+    height: 65vh;
+  }
 }
 
 @keyframes gradient {
@@ -171,7 +175,8 @@
       }
 
       @media screen and (max-width: 400px) {
-        font-size: 40px;
+        font-size: 45px;
+        margin-top: 0;
       }
     }
 
