@@ -9,6 +9,14 @@
   @media screen and (max-width: 900px) {
     height: 110vh;
   }
+
+  @media screen and (max-width: 600px) {
+    height: 130vh;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 170vh;
+  }
 }
 
 .lineSection {

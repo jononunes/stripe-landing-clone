@@ -9,6 +9,10 @@
   @media screen and (max-width: 900px) {
     height: 30vh;
   }
+
+  @media screen and (max-width: 400px) {
+    height: 60vh;
+  }
 }
 
 .footerContainer {
@@ -30,6 +34,10 @@
   @media screen and (max-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin: -15rem 2rem;
   }
 
   .columnOne {
@@ -139,5 +147,9 @@
 
   @media screen and (max-width: 600px) {
     height: 115vh;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 165vh;
   }
 }
