@@ -41,7 +41,81 @@ export default function NavbarMenu({ index, setNavMenu }) {
               </p>
             </div>
           </div>
-          <div className={s.productsMenu}></div>
+          <div className={s.productsMenu}>
+            <div className={s.content}>
+              <ul className={s.contentList}>
+                <li className={s.contentLink}>
+                  <img src="./Payments.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Payments</h1>
+                    <p className={s.contentText}>Online payments</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Checkout.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Checkout</h1>
+                    <p className={s.contentText}>Prebuilt payments page</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Elements.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Elements</h1>
+                    <p className={s.contentText}>Customizable payments UIs</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img
+                    src="./PaymentLinks.PNG"
+                    alt=""
+                    className={s.contentIcon}
+                  />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Payment Links</h1>
+                    <p className={s.contentText}>No-code payments</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Radar.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Radar</h1>
+                    <p className={s.contentText}>Fraud &amp; risk managemnt</p>
+                  </div>
+                </li>
+              </ul>
+              <ul className={s.contentList}>
+                <li className={s.contentLink}>
+                  <img src="./Connect.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Connect</h1>
+                    <p className={s.contentText}>Payments for platforms</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Billing.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Billing</h1>
+                    <p className={s.contentText}>Subscription management</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Invoicing.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Invoicing</h1>
+                    <p className={s.contentText}>Online invoices</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Terminal.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Terminal</h1>
+                    <p className={s.contentText}>In-person payments</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className={`${s.subMenu} ${index !== 2 && s.hideSubMenu}`}>
           <div className={s.subSection}>
