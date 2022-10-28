@@ -29,7 +29,8 @@
 }
 
 .arrowProducts {
-  translate: 20px;
+  translate: -210px;
+  background-color: #f0f3f6;
 }
 
 .arrowSolutions {
@@ -44,6 +45,10 @@
   translate: 160px;
 }
 
+.menuShift {
+  left: 33% !important;
+}
+
 .navbarMenuContainer {
   background-color: white;
   display: flex;
@@ -51,9 +56,53 @@
   z-index: 2;
   position: absolute;
   opacity: 100%;
-  left: 33%;
+  left: 25%;
   transition: 0.3s ease-in-out;
   box-shadow: -3px -3px 5px rgb(82 95 127 / 4%);
+
+  .productsMenuContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f3f6;
+    border-radius: 10px;
+    opacity: 100%;
+
+    .productsTabs {
+      display: flex;
+      flex-direction: column;
+
+      .productsTab {
+        height: 6rem;
+        width: 15rem;
+        padding: 20px;
+        border-radius: 10px;
+        &:hover {
+          background-color: #fff;
+        }
+
+        .tabHeading {
+          font-size: 14px;
+          color: $clr-primary;
+          font-weight: 500;
+          margin-top: 0;
+        }
+
+        .tabText {
+          font-size: 12px;
+          font-weight: 400;
+          color: #4f5b76;
+          margin: 0;
+        }
+      }
+    }
+
+    .productsMenu {
+      background-color: #fff;
+      width: 30vw;
+      height: 20rem;
+      border-radius: 10px;
+    }
+  }
 
   .subMenu {
     opacity: 100%;

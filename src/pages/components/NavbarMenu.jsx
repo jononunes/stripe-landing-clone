@@ -4,7 +4,9 @@ export default function NavbarMenu({ index, setNavMenu }) {
   return (
     <div>
       <div
-        className={`${s.navbarMenuContainer} ${index === 0 && s.hideMenu}`}
+        className={`${s.navbarMenuContainer} ${index === 0 && s.hideMenu} ${
+          index !== 1 && s.menuShift
+        }`}
         onMouseLeave={() => setNavMenu(0)}
       >
         <div
@@ -14,6 +16,33 @@ export default function NavbarMenu({ index, setNavMenu }) {
             index === 4 && s.arrowResources
           }`}
         ></div>
+        <div
+          className={`${s.productsMenuContainer} ${
+            index !== 1 && s.hideSubMenu
+          }`}
+        >
+          <div className={s.productsTabs}>
+            <div className={s.productsTab}>
+              <h1 className={s.tabHeading}>Global Payments</h1>
+              <p className={s.tabText}>
+                Accept payments online, in-person, or through your platform
+              </p>
+            </div>
+            <div className={s.productsTab}>
+              <h1 className={s.tabHeading}>Revenue and Financial Management</h1>
+              <p className={s.tabText}>
+                Automate revenue collection and finance.
+              </p>
+            </div>
+            <div className={s.productsTab}>
+              <h1 className={s.tabHeading}>Banking-as-a-Service</h1>
+              <p className={s.tabText}>
+                Embed financial services in your platform or product.
+              </p>
+            </div>
+          </div>
+          <div className={s.productsMenu}></div>
+        </div>
         <div className={`${s.subMenu} ${index !== 2 && s.hideSubMenu}`}>
           <div className={s.subSection}>
             <h1 className={s.subMenuHeading}>USE CASES</h1>
