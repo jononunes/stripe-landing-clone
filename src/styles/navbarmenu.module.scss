@@ -1,0 +1,160 @@
+@use "./mixin.scss" as *;
+
+.hideMenu {
+  opacity: 0% !important;
+  display: none;
+  z-index: -1 !important;
+  height: 10vh;
+  width: 30vw;
+}
+
+.hideSubMenu {
+  opacity: 0% !important;
+  z-index: -5 !important;
+  position: absolute !important;
+}
+
+.menuArrow {
+  position: absolute;
+  background-color: #fff;
+  top: -5px;
+  left: 50%;
+  margin: 0 0 0 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px 0 0 0;
+  z-index: 1;
+  transform: rotate(-135deg);
+  transition: 0.3s ease-in-out;
+}
+
+.arrowProducts {
+  translate: 20px;
+}
+
+.arrowSolutions {
+  translate: -90px;
+}
+
+.arrowDevelopers {
+  translate: -30px;
+}
+
+.arrowResources {
+  translate: 160px;
+}
+
+.navbarMenuContainer {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  z-index: 2;
+  position: absolute;
+  opacity: 100%;
+  left: 33%;
+  transition: 0.3s ease-in-out;
+  box-shadow: -3px -3px 5px rgb(82 95 127 / 4%);
+
+  .subMenu {
+    opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    position: initial;
+    border-radius: 10px;
+
+    .subSection {
+      padding: 30px;
+      display: inline-grid;
+      grid: auto/repeat(2, 1fr);
+      gap: 12px 32px;
+
+      .subMenuHeading {
+        font-size: 14px;
+        color: #727f96;
+        font-weight: 500;
+        grid-column: span 2;
+      }
+
+      .subMenuList {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        .subMenuLink {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 0.3rem;
+          cursor: pointer;
+
+          &:hover {
+            .subLinkText {
+              font-weight: 800;
+            }
+          }
+
+          .subLinkIcon {
+            height: 20px;
+            width: 20px;
+          }
+
+          .subLinkText {
+            font-size: 14px;
+            font-weight: 600;
+            color: $clr-primary;
+          }
+
+          .subTextContainer {
+            .subLinkText {
+              margin: 0;
+              font-size: 14px;
+              font-weight: 600;
+              color: $clr-primary;
+              margin-top: 0.6rem;
+            }
+
+            .secondaryText {
+              margin: 0;
+              margin-top: 0.5rem;
+              margin-bottom: -0.5rem;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .secondaryList {
+        list-style: none;
+        margin: 0;
+        margin-top: 1.5rem;
+        padding: 0;
+        padding-left: 1.5rem;
+        .secondaryListHeading {
+          font-size: 14px;
+          font-weight: 500;
+          color: #727f96;
+        }
+        .secondaryLink {
+          .secondaryLinkText {
+            font-size: 14px;
+            color: #727f96;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .bottomSection {
+      background-color: #f6f9fb;
+      border-radius: 10px;
+    }
+  }
+}
+
+.spanTwo {
+  grid-column: span 2;
+}

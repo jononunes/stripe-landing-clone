@@ -3,9 +3,13 @@ import { FiMenu } from "react-icons/fi";
 import s from "../../styles/header.module.scss";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
+import NavbarMenu from "./NavbarMenu";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [navMenu, setNavMenu] = useState(0);
+
+  console.log(navMenu);
 
   const toggleMobileMenu = () => {
     setIsOpen(!isOpen);
@@ -25,10 +29,18 @@ export default function Header() {
           <img src="./logo.png" className={s.logo} />
           <div className={s.navLinks}>
             <ul className={s.navList}>
-              <li className={s.navLink}>Products</li>
-              <li className={s.navLink}>Solutions</li>
-              <li className={s.navLink}>Developers</li>
-              <li className={s.navLink}>Resources</li>
+              <li className={s.navLink} onMouseEnter={() => setNavMenu(1)}>
+                Products
+              </li>
+              <li className={s.navLink} onMouseEnter={() => setNavMenu(2)}>
+                Solutions
+              </li>
+              <li className={s.navLink} onMouseEnter={() => setNavMenu(3)}>
+                Developers
+              </li>
+              <li className={s.navLink} onMouseEnter={() => setNavMenu(4)}>
+                Resources
+              </li>
               <li className={s.navLink}>Pricing</li>
             </ul>
           </div>
@@ -39,6 +51,7 @@ export default function Header() {
             <FiMenu className={s.mobileMenuIcon} onClick={toggleMobileMenu} />
           </div>
         </div>
+        <NavbarMenu index={navMenu} setNavMenu={setNavMenu} />
         <MobileMenu isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
 
         <div className={s.heroContainer}>

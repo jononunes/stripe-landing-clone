@@ -7,9 +7,6 @@ import s from "../../styles/mobilemenu.module.scss";
 export default function MobileMenu({ isOpen, toggleMobileMenu }) {
   const [displaySection, setDisplaySection] = useState(0);
 
-  const changeSubSection = (index) => {
-    setDisplaySection(index);
-  };
   return (
     <div>
       <div className={`${s.mobileMenuContainer} ${isOpen && s.mobileMenuOpen}`}>
