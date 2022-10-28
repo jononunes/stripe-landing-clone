@@ -1,8 +1,18 @@
+import { useState } from "react";
 import s from "../../styles/navbarmenu.module.scss";
 
 export default function NavbarMenu({ index, setNavMenu }) {
+  const [productMenu, setProductMenu] = useState(1);
+
   return (
     <div>
+      <div
+        className={`${s.menuArrow} ${index !== 0 && s.showArrow} ${
+          index === 1 && s.arrowProducts
+        } ${index === 2 && s.arrowSolutions} ${
+          index === 3 && s.arrowDevelopers
+        } ${index === 4 && s.arrowResources}`}
+      ></div>
       <div
         className={`${s.navbarMenuContainer} ${index === 0 && s.hideMenu} ${
           index !== 1 && s.menuShift
@@ -10,31 +20,33 @@ export default function NavbarMenu({ index, setNavMenu }) {
         onMouseLeave={() => setNavMenu(0)}
       >
         <div
-          className={`${s.menuArrow} ${index === 1 && s.arrowProducts} ${
-            index === 2 && s.arrowSolutions
-          } ${index === 3 && s.arrowDevelopers} ${
-            index === 4 && s.arrowResources
-          }`}
-        ></div>
-        <div
           className={`${s.productsMenuContainer} ${
             index !== 1 && s.hideSubMenu
           }`}
         >
           <div className={s.productsTabs}>
-            <div className={s.productsTab}>
+            <div
+              className={`${s.productsTab} ${productMenu === 1 && s.activeTab}`}
+              onMouseEnter={() => setProductMenu(1)}
+            >
               <h1 className={s.tabHeading}>Global Payments</h1>
               <p className={s.tabText}>
                 Accept payments online, in-person, or through your platform
               </p>
             </div>
-            <div className={s.productsTab}>
+            <div
+              className={`${s.productsTab} ${productMenu === 2 && s.activeTab}`}
+              onMouseEnter={() => setProductMenu(2)}
+            >
               <h1 className={s.tabHeading}>Revenue and Financial Management</h1>
               <p className={s.tabText}>
                 Automate revenue collection and finance.
               </p>
             </div>
-            <div className={s.productsTab}>
+            <div
+              className={`${s.productsTab} ${productMenu === 3 && s.activeTab}`}
+              onMouseEnter={() => setProductMenu(3)}
+            >
               <h1 className={s.tabHeading}>Banking-as-a-Service</h1>
               <p className={s.tabText}>
                 Embed financial services in your platform or product.
@@ -42,7 +54,9 @@ export default function NavbarMenu({ index, setNavMenu }) {
             </div>
           </div>
           <div className={s.productsMenu}>
-            <div className={s.content}>
+            <div
+              className={`${s.content} ${productMenu === 1 && s.showContent}`}
+            >
               <ul className={s.contentList}>
                 <li className={s.contentLink}>
                   <img src="./Payments.PNG" alt="" className={s.contentIcon} />
@@ -80,7 +94,7 @@ export default function NavbarMenu({ index, setNavMenu }) {
                   <img src="./Radar.PNG" alt="" className={s.contentIcon} />
                   <div className={s.contentTextContainer}>
                     <h1 className={s.contentHeading}>Radar</h1>
-                    <p className={s.contentText}>Fraud &amp; risk managemnt</p>
+                    <p className={s.contentText}>Fraud &amp; risk management</p>
                   </div>
                 </li>
               </ul>
@@ -111,6 +125,138 @@ export default function NavbarMenu({ index, setNavMenu }) {
                   <div className={s.contentTextContainer}>
                     <h1 className={s.contentHeading}>Terminal</h1>
                     <p className={s.contentText}>In-person payments</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              className={`${s.content} ${productMenu === 2 && s.showContent}`}
+            >
+              <ul className={s.contentList}>
+                <li className={s.contentLink}>
+                  <img src="./Billing.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Billing</h1>
+                    <p className={s.contentText}>Subscription management</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Invoicing.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Invoicing</h1>
+                    <p className={s.contentText}>Online invoices</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Tax.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Tax</h1>
+                    <p className={s.contentText}>
+                      Sales tax &amp; VAT automation
+                    </p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img
+                    src="./RevenueRecognition.PNG"
+                    alt=""
+                    className={s.contentIcon}
+                  />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Revenue Recognition</h1>
+                    <p className={s.contentText}>Accounting automation</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Sigma.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Sigma</h1>
+                    <p className={s.contentText}>Custom reports</p>
+                  </div>
+                </li>
+              </ul>
+              <ul className={s.contentList}>
+                <li className={s.contentLink}>
+                  <img
+                    src="./DataPipeline.PNG"
+                    alt=""
+                    className={s.contentIcon}
+                  />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Data Pipeline</h1>
+                    <p className={s.contentText}>Data warehouse sync</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img
+                    src="./FinancialConnections.PNG"
+                    alt=""
+                    className={s.contentIcon}
+                  />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Financial Connections</h1>
+                    <p className={s.contentText}>
+                      Linked financial account data
+                    </p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Identity.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Identity</h1>
+                    <p className={s.contentText}>
+                      Online identity verification
+                    </p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Atlas.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Atlas</h1>
+                    <p className={s.contentText}>Startup incorporation</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Climate.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Climate</h1>
+                    <p className={s.contentText}>Carbon removal</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              className={`${s.content} ${productMenu === 3 && s.showContent}`}
+            >
+              <ul className={s.contentList}>
+                <li className={s.contentLink}>
+                  <img src="./Connect.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Connect</h1>
+                    <p className={s.contentText}>Payments for platforms</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Capital.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Capital</h1>
+                    <p className={s.contentText}>Business financing</p>
+                  </div>
+                </li>
+              </ul>
+              <ul className={s.contentList}>
+                <li className={s.contentLink}>
+                  <img src="./Issuing.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Issuing</h1>
+                    <p className={s.contentText}>Card creation</p>
+                  </div>
+                </li>
+                <li className={s.contentLink}>
+                  <img src="./Treasury.PNG" alt="" className={s.contentIcon} />
+                  <div className={s.contentTextContainer}>
+                    <h1 className={s.contentHeading}>Treasury</h1>
+                    <p className={s.contentText}>Banking-as-a-service</p>
                   </div>
                 </li>
               </ul>
