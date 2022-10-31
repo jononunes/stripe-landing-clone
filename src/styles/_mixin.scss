@@ -101,3 +101,17 @@ $clr-tertiary: #00d4ff;
     width: 8px;
   }
 }
+
+@mixin longStripe($color) {
+  background-color: $color;
+  width: 20vw;
+  height: 5vh;
+  transform: skewY(-7deg);
+}
+
+@mixin shortStripe($color) {
+  background-color: $color;
+  width: 9vw;
+  height: 5vh;
+  transform: skewY(-7deg);
+}

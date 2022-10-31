@@ -40,6 +40,14 @@ export default function GetStarted() {
             </button>
           </div>
         </div>
+        <div className={s.stripeLeft}>
+          <div className={s.shortStripe}></div>
+          <div className={s.longStripe}></div>
+        </div>
+        <div className={s.stripeRight}>
+          <div className={s.longStripe}></div>
+          <div className={s.shortStripe}></div>
+        </div>
       </div>
     </div>
   );

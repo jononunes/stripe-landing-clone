@@ -67,4 +67,67 @@
       }
     }
   }
+  .stripeRight {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    margin-top: -15rem;
+
+    @media screen and (max-width: 600px) {
+      margin-top: -10rem;
+    }
+
+    .longStripe {
+      @include longStripe(#80e9ff);
+    }
+
+    .shortStripe {
+      @include shortStripe(#443aff);
+      margin-left: 3rem;
+      margin-top: -0.5rem;
+      opacity: 0.8;
+    }
+  }
+
+  .stripeLeft {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    margin-top: 40.1rem;
+
+    @media screen and (max-width: 1200px) {
+      margin-top: 55rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin-top: 52rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-top: 75rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      margin-top: 80rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      margin-top: 75rem;
+    }
+
+    .longStripe {
+      @include longStripe(#443aff);
+      opacity: 0.7;
+    }
+
+    .shortStripe {
+      @include shortStripe(#80e9ff);
+      margin-left: 5rem;
+      margin-bottom: -1rem;
+
+      @media screen and (max-width: 450px) {
+        margin-left: 1rem;
+      }
+    }
+  }
 }
