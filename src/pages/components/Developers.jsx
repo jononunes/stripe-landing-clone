@@ -27,6 +27,11 @@ export default function Developers() {
           </button>
           <div className={s.extraInfoContainer}>
             <div className={s.extraLeft}>
+              <div className={s.toolsIcon}>
+                <img src="./codeIcon.png" alt="" className={s.codeBlockIcon} />
+                <div className={s.indexMarker}></div>
+                <img src="./gearpurple.png" alt="" className={s.gearPurple} />
+              </div>
               <h2 className={s.extraTitle}>Tools for every stack</h2>
               <p className={s.extraText}>
                 We offer client and server <br />
@@ -38,6 +43,10 @@ export default function Developers() {
               </button>
             </div>
             <div className={s.extraRight}>
+              <div className={s.integrationsIcon}>
+                <img src="./cubeblue.png" alt="" className={s.cubeBlue} />
+                <img src="./cubepurple.png" alt="" className={s.cubePurple} />
+              </div>
               <h2 className={s.extraTitle}>Prebuilt integrations</h2>
               <p className={s.extraText}>
                 Use integrations for systems <br />

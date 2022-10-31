@@ -115,3 +115,12 @@ $clr-tertiary: #00d4ff;
   height: 5vh;
   transform: skewY(-7deg);
 }
+
+@mixin circle {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 200px;
+  background-color: #443aff;
+  opacity: 0.8;
+}

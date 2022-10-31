@@ -11,6 +11,24 @@ export default function WhyStripe() {
         </h1>
         <div className={s.columnContainer}>
           <div className={s.column}>
+            <div className={s.closeIcon}>
+              <div className={s.triangles}>
+                <img src="./triangleBlue.png" alt="" className={s.triangle} />
+                <img src="./triangleBlue.png" alt="" className={s.triangle} />
+                <img src="./triangleBlue.png" alt="" className={s.triangle} />
+                <img src="./triangleBlue.png" alt="" className={s.triangle} />
+                <img src="./triangleBlue.png" alt="" className={s.triangle} />
+                <img src="./triangleBlue.png" alt="" className={s.triangle} />
+              </div>
+              <div className={s.circles}>
+                <div className={s.circle}></div>
+                <div className={s.circle}></div>
+                <div className={s.circle}></div>
+                <div className={s.circle}></div>
+                <div className={s.circle}></div>
+                <div className={s.circle}></div>
+              </div>
+            </div>
             <h2 className={s.columnHeading}>Close to the metal</h2>
             <p className={s.text}>
               From <a href="#">direct integrations</a> with <br /> card networks
@@ -21,6 +39,10 @@ export default function WhyStripe() {
             </p>
           </div>
           <div className={s.column}>
+            <div className={s.arrowIcon}>
+              <img src="./arrowblue.png" alt="" className={s.arrowBlue} />
+              <img src="./arrowpurple.png" alt="" className={s.arrowPurple} />
+            </div>
             <h2 className={s.columnHeading}>Fastest-improving platform</h2>
             <p className={s.text}>
               We release <a href="#"> hundreds of features</a>
@@ -31,6 +53,17 @@ export default function WhyStripe() {
             </p>
           </div>
           <div className={s.column}>
+            <div className={s.monitorIcon}>
+              <div className={s.monitorContainer}>
+                <img
+                  src="./monitorCircle.png"
+                  alt=""
+                  className={s.monitorCircle}
+                />
+                <img src="./monitorLine.png" alt="" className={s.monitorLine} />
+              </div>
+              <img src="./tickCircle.png" alt="" className={s.tickCircle} />
+            </div>
             <h2 className={s.columnHeading}>Battle-tested reliability</h2>
             <p className={s.text}>
               Our systems operate with <br />
@@ -41,6 +74,10 @@ export default function WhyStripe() {
             </p>
           </div>
           <div className={s.column}>
+            <div className={s.gearIcon}>
+              <img src="./gearblue.png" alt="" className={s.gearBlue} />
+              <img src="./gearpurple.png" alt="" className={s.gearPurple} />
+            </div>
             <h2 className={s.columnHeading}>Intelligent optimizations</h2>
             <p className={s.text}>
               Our machine learning models <br />

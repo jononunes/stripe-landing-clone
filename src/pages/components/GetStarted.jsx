@@ -22,6 +22,14 @@ export default function GetStarted() {
         </div>
         <div className={s.detailsContainer}>
           <div className={s.detailColumn}>
+            <div className={s.priceTagIcon}>
+              <img src="./pricetagback.png" alt="" className={s.priceTagBack} />
+              <img
+                src="./pricetagfront.png"
+                alt=""
+                className={s.priceTagFront}
+              />
+            </div>
             <h2 className={s.detailTitle}>Always know what you pay</h2>
             <p className={s.detailText}>
               Integrated per-transaction pricing with no hidden fees.
@@ -31,6 +39,23 @@ export default function GetStarted() {
             </button>
           </div>
           <div className={s.detailColumn}>
+            <div className={s.integrationIcon}>
+              <img
+                src="./integrationIconBlue.png"
+                alt=""
+                className={s.integrationBack}
+              />
+              <img
+                src="./integrationIconPurple.png"
+                alt=""
+                className={s.integrationFront}
+              />
+              <img
+                src="./brackets.png"
+                alt=""
+                className={s.integrationBrackets}
+              />
+            </div>
             <h2 className={s.detailTitle}>Start your integration</h2>
             <p className={s.detailText}>
               Get up and running with Stripe in as little as 10 minutes.
