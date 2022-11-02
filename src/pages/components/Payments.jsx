@@ -62,6 +62,39 @@ export default function Payments() {
             Start with payments<span className={s.arrow}></span>
           </button>
         </div>
+        <div className={s.paymentsFiguresContainer}>
+          <div className={s.visaCardContainer}>
+            <div className={s.visaCardTop}>
+              <p className={s.commutifiHeading}>Commutifi</p>
+              <p className={s.zestfulHeading}>Zestful</p>
+              <p className={s.postmatesHeading}>Postmates</p>
+            </div>
+            <div className={s.visaCardMiddle}>
+              <img
+                src="./postmatesimage.png"
+                alt=""
+                className={s.postmatesImage}
+              />
+              <img src="./cardchip.png" alt="" className={s.chip} />
+              <img
+                src="./commutifyimage.png"
+                alt=""
+                className={s.commutifiImage}
+              />
+              <img src="./zestfulimage.png" alt="" className={s.zestfulImage} />
+            </div>
+            <div className={s.visaCardBottom}>
+              <p className={s.commutifiName}>Micaela Ballew</p>
+              <p className={s.zestfulName}>Thomas Degry</p>
+              <p className={s.postmatesName}>Jane Diaz</p>
+              <img src="./visalogo.png" alt="" className={s.visaLogo} />
+            </div>
+          </div>
+          <div className={s.invoiceContainer}>
+            <div className={s.invoiceBG}></div>
+            <div className={s.invoiceCard}></div>
+          </div>
+        </div>
       </div>
     </div>
   );

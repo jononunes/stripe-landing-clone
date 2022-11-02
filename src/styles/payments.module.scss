@@ -2,7 +2,7 @@
 
 .paymentsContainer {
   background-color: #f6f9fc;
-  height: 100vh;
+  height: 200vh;
 
   @media screen and (max-width: 600px) {
     height: 135vh;
@@ -95,6 +95,259 @@
 
     .btn > .arrow {
       @include arrow(#fff);
+    }
+  }
+
+  .paymentsFiguresContainer {
+    position: absolute;
+    display: grid;
+    grid-gap: 2rem;
+    pointer-events: none;
+    grid: auto/repeat(3, 1fr);
+    margin: 5rem 16rem;
+    z-index: 2;
+
+    .visaCardContainer {
+      position: relative;
+      padding: 10px 20px;
+      height: 200px;
+      width: 320px;
+      border-radius: 16px;
+      background-color: #09cbcb;
+      box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%),
+        0 30px 60px -30px rgb(0 0 0 / 30%);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      animation: changeColor 30s infinite;
+
+      .visaCardTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .commutifiHeading {
+          font-size: 18px;
+          color: #fff;
+          font-weight: 500;
+          margin: 0;
+          margin-top: 0.5rem;
+
+          animation: commutifiFade 30s infinite;
+        }
+
+        .zestfulHeading {
+          position: absolute;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 500;
+          margin: 0;
+          margin-top: 0.5rem;
+
+          animation: zestfulFade 30s infinite;
+        }
+
+        .postmatesHeading {
+          position: absolute;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 500;
+          margin: 0;
+          margin-top: 0.5rem;
+
+          animation: postmatesFade 30s infinite;
+        }
+      }
+
+      .visaCardMiddle {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+
+        .chip {
+          height: 45px;
+          z-index: 1;
+        }
+
+        .commutifiImage {
+          height: 100px;
+          animation: commutifiFade 30s infinite;
+        }
+
+        .zestfulImage {
+          position: absolute;
+          margin-left: 85px;
+          height: 100px;
+          animation: zestfulFade 30s infinite;
+        }
+
+        .postmatesImage {
+          position: absolute;
+          width: -webkit-fill-available;
+          margin-left: 10px;
+          height: 100px;
+          animation: postmatesFade 30s infinite;
+        }
+      }
+
+      .visaCardBottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .commutifiName {
+          color: #fff;
+          font-size: 13px;
+          font-weight: 600;
+          margin: 0;
+
+          animation: commutifiFade 30s infinite;
+        }
+
+        .zestfulName {
+          position: absolute;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 600;
+          margin: 0;
+
+          animation: zestfulFade 30s infinite;
+        }
+
+        .postmatesName {
+          position: absolute;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 600;
+          margin: 0;
+
+          animation: postmatesFade 30s infinite;
+        }
+
+        .visaLogo {
+          height: 38px;
+        }
+      }
+    }
+
+    @keyframes changeColor {
+      0% {
+        background-color: #09cbcb;
+      }
+
+      30% {
+        background-color: #09cbcb;
+      }
+      33% {
+        background-color: #ffc025;
+      }
+
+      63% {
+        background-color: #ffc025;
+      }
+      66% {
+        background-color: #000000;
+      }
+      96% {
+        background-color: #000000;
+      }
+      100% {
+        background-color: #09cbcb;
+      }
+    }
+    @keyframes commutifiFade {
+      0% {
+        opacity: 100%;
+      }
+
+      30% {
+        opacity: 100%;
+      }
+      33% {
+        opacity: 0%;
+      }
+
+      96% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+
+    @keyframes zestfulFade {
+      0% {
+        opacity: 0%;
+      }
+
+      30% {
+        opacity: 0%;
+      }
+      33% {
+        opacity: 100%;
+      }
+
+      63% {
+        opacity: 100%;
+      }
+      66% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 0%;
+      }
+    }
+
+    @keyframes postmatesFade {
+      0% {
+        opacity: 0%;
+      }
+
+      63% {
+        opacity: 0%;
+      }
+      66% {
+        opacity: 100%;
+      }
+      96% {
+        opacity: 100%;
+      }
+      100% {
+        opacity: 0%;
+      }
+    }
+
+    .invoiceContainer {
+      overflow: hidden;
+      height: 350px;
+      width: 500px;
+      position: relative;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%),
+        0 30px 60px -30px rgb(0 0 0 / 30%);
+
+      .invoiceBG {
+        position: relative;
+        background-color: rgb(97, 31, 105);
+        height: 67%;
+        transform-origin: left;
+        transform: skewY(168deg);
+      }
+
+      .invoiceCard {
+        background-color: white;
+        border-radius: 6px;
+        width: 380px;
+        height: 100px;
+        place-self: center;
+        box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
+          0 8px 16px -8px rgb(0 0 0 / 30%);
+      }
     }
   }
 }
