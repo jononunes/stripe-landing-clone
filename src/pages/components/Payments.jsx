@@ -1,3 +1,7 @@
+import { BsFillCreditCardFill } from "react-icons/bs";
+import { AiFillBank } from "react-icons/ai";
+import { TiArrowSortedUp } from "react-icons/ti";
+
 import s from "../../styles/payments.module.scss";
 
 export default function Payments() {
@@ -92,7 +96,47 @@ export default function Payments() {
           </div>
           <div className={s.invoiceContainer}>
             <div className={s.invoiceBG}></div>
-            <div className={s.invoiceCard}></div>
+            <div className={s.invoiceCard}>
+              <div className={s.logoContainer}>
+                <img src="./slacklogo.png" alt="" className={s.slackLogo} />
+                <img
+                  src="./onemedicallogo.png"
+                  alt=""
+                  className={s.oneMedLogo}
+                />
+                <img src="./udacitylogo.png" alt="" className={s.udacityLogo} />
+              </div>
+              <h1 className={s.slackHeading}>Invoice from Slack</h1>
+              <h1 className={s.oneMedHeading}>Invoice from One Medical</h1>
+              <h1 className={s.udacityHeading}>Invoice from Udacity</h1>
+              <p className={s.invoiceName}>Billed to Jenny Rosen</p>
+              <div className={s.bottomSection}>
+                <h1 className={s.slackAmount}>$750.00 due Aug 1 2020</h1>
+                <h1 className={s.oneMedAmount}>$199.00 due Jan 1 2021</h1>
+                <h1 className={s.udacityAmount}>$399.00 due Sep 1 2020</h1>
+                <div className={s.inputContainer}>
+                  <div className={`${s.input} ${s.active}`}>
+                    <BsFillCreditCardFill size={15} className={s.inputIcon} />
+                    Card
+                  </div>
+                  <div className={s.input}>
+                    <AiFillBank size={18} className={s.inputIcon} />
+                    Bank
+                  </div>
+                </div>
+                <div className={s.input}>
+                  <BsFillCreditCardFill size={15} className={s.inputIcon} />
+                  Card Number
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  MM/YY &nbsp; CVC
+                </div>
+                <div className={s.payButton}>Pay Invoice</div>
+              </div>
+            </div>
+          </div>
+          <div className={s.deviceContainer}>
+            <TiArrowSortedUp size={20} className={s.deviceArrow} />
+            <img src="./device.png" alt="" className={s.device} />
           </div>
         </div>
       </div>

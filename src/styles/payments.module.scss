@@ -99,7 +99,7 @@
   }
 
   .paymentsFiguresContainer {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-gap: 2rem;
     pointer-events: none;
@@ -323,7 +323,7 @@
 
     .invoiceContainer {
       overflow: hidden;
-      height: 350px;
+      height: 370px;
       width: 500px;
       position: relative;
       background-color: #fff;
@@ -337,16 +337,332 @@
         height: 67%;
         transform-origin: left;
         transform: skewY(168deg);
+        animation: bgSwitch 30s infinite;
       }
 
       .invoiceCard {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        margin-top: -12rem;
+        margin-left: 5rem;
         background-color: white;
         border-radius: 6px;
-        width: 380px;
-        height: 100px;
+        width: 340px;
+        height: 250px;
         place-self: center;
         box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
           0 8px 16px -8px rgb(0 0 0 / 30%);
+
+        .logoContainer {
+          background-color: #fff;
+          border-radius: 50px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          margin-top: -1rem;
+          box-shadow: 0 0 5px -1px rgb(50 50 93 / 25%),
+            0 0 3px -1px rgb(0 0 0 / 30%);
+
+          .slackLogo {
+            height: 25px;
+            animation: slackFade 30s infinite;
+          }
+          .oneMedLogo {
+            position: absolute;
+            height: 25px;
+            animation: oneMedFade 30s infinite;
+          }
+          .udacityLogo {
+            position: absolute;
+            height: 25px;
+            animation: udacityFade 30s infinite;
+          }
+        }
+
+        .slackHeading {
+          font-size: 12px;
+          font-weight: 500;
+          color: $clr-primary;
+          margin: 0;
+          animation: slackFade 30s infinite;
+        }
+
+        .oneMedHeading {
+          position: absolute;
+          font-size: 12px;
+          font-weight: 500;
+          color: $clr-primary;
+          margin: 0;
+          margin-top: 2.5rem;
+          animation: oneMedFade 30s infinite;
+        }
+        .udacityHeading {
+          position: absolute;
+          font-size: 12px;
+          font-weight: 500;
+          color: $clr-primary;
+          margin: 0;
+          margin-top: 2.5rem;
+          animation: udacityFade 30s infinite;
+        }
+
+        .invoiceName {
+          margin: 0;
+          font-size: 11px;
+          font-weight: 400;
+          color: $clr-primary;
+        }
+
+        @keyframes slackFade {
+          0% {
+            margin-left: 0px;
+            opacity: 100%;
+          }
+
+          30% {
+            margin-left: 0px;
+            opacity: 100%;
+          }
+          33% {
+            margin-left: 50px;
+            opacity: 0%;
+          }
+
+          96% {
+            margin-left: -50px;
+            opacity: 0%;
+          }
+          100% {
+            margin-left: 0px;
+            opacity: 100%;
+          }
+        }
+
+        @keyframes oneMedFade {
+          0% {
+            margin-left: -50px;
+            opacity: 0%;
+          }
+
+          30% {
+            margin-left: -50px;
+            opacity: 0%;
+          }
+          33% {
+            margin-left: 0px;
+            opacity: 100%;
+          }
+
+          63% {
+            margin-left: 0px;
+            opacity: 100%;
+          }
+          66% {
+            margin-left: 50px;
+            opacity: 0%;
+          }
+          100% {
+            opacity: 0%;
+          }
+        }
+
+        @keyframes udacityFade {
+          0% {
+            margin-left: -50px;
+            opacity: 0%;
+          }
+
+          63% {
+            margin-left: -50px;
+            opacity: 0%;
+          }
+          66% {
+            margin-left: 0;
+            opacity: 100%;
+          }
+          96% {
+            margin-left: 0px;
+            opacity: 100%;
+          }
+          100% {
+            margin-left: 50px;
+            opacity: 0%;
+          }
+        }
+
+        .bottomSection {
+          background: #f6f9fc;
+          padding: 16px 40px 40px;
+          width: -webkit-fill-available;
+          height: -webkit-fill-available;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
+            0 8px 16px -8px rgb(0 0 0 / 30%);
+
+          .slackAmount {
+            font-size: 12px;
+            font-weight: 500;
+            color: $clr-primary;
+            margin: 0;
+            animation: slackFade 30s infinite;
+          }
+          .oneMedAmount {
+            font-size: 12px;
+            font-weight: 500;
+            color: $clr-primary;
+            margin: 0;
+            animation: oneMedFade 30s infinite;
+          }
+          .udacityAmount {
+            position: absolute;
+            font-size: 12px;
+            font-weight: 500;
+            color: $clr-primary;
+            margin: 0;
+            animation: udacityFade 30s infinite;
+          }
+
+          .inputContainer {
+            display: flex;
+            gap: 1rem;
+            width: -webkit-fill-available;
+            margin-top: 0.5rem;
+          }
+
+          .input {
+            align-items: center;
+            width: -webkit-fill-available;
+            font-size: 12px;
+            min-height: 24px;
+            line-height: 24px;
+            margin: 6px 0 16px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 0.4rem;
+            padding: 0px 5px;
+
+            box-shadow: 0 0 0 1px rgb(50 50 93 / 7%),
+              0 2px 3px -1px rgb(50 50 93 / 12%),
+              0 1px 3px -1px rgb(0 0 0 / 12%);
+
+            .inputIcon {
+              opacity: 0.2;
+            }
+          }
+
+          .active {
+            color: rgb(97, 31, 105);
+            border-style: solid;
+            font-weight: 700;
+
+            animation: activeSwitch 30s infinite;
+          }
+
+          @keyframes activeSwitch {
+            0% {
+              color: rgb(97, 31, 105);
+            }
+            30% {
+              color: rgb(97, 31, 105);
+            }
+            33% {
+              color: rgb(0, 84, 80);
+            }
+            63% {
+              color: rgb(0, 84, 80);
+            }
+            66% {
+              color: rgb(3, 179, 228);
+            }
+            96% {
+              color: rgb(3, 179, 228);
+            }
+            100% {
+              color: rgb(97, 31, 105);
+            }
+          }
+
+          @keyframes bgSwitch {
+            0% {
+              background-color: rgb(97, 31, 105);
+            }
+            30% {
+              background-color: rgb(97, 31, 105);
+            }
+            33% {
+              background-color: rgb(0, 84, 80);
+            }
+            63% {
+              background-color: rgb(0, 84, 80);
+            }
+            66% {
+              background-color: rgb(3, 179, 228);
+            }
+            96% {
+              background-color: rgb(3, 179, 228);
+            }
+            100% {
+              background-color: rgb(97, 31, 105);
+            }
+          }
+
+          .payButton {
+            border-radius: 4px;
+            padding: 4px 0;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            color: #fff;
+            background-color: rgb(97, 31, 105);
+            box-shadow: 0 2px 4px -1px rgb(50 50 93 / 25%),
+              0 1px 3px -1px rgb(0 0 0 / 30%);
+            width: -webkit-fill-available;
+            animation: bgSwitch 30s infinite;
+          }
+        }
+      }
+    }
+
+    .deviceContainer {
+      position: relative;
+      margin-top: -9rem;
+      .deviceArrow {
+        position: absolute;
+        animation: deviceArrow 3s infinite;
+        z-index: 2;
+        filter: invert(1);
+        margin-bottom: -5rem;
+        margin-left: 8rem;
+      }
+      .device {
+        height: 520px;
+        filter: drop-shadow(1px 12px 10px #26394d9c);
+      }
+
+      @keyframes deviceArrow {
+        0% {
+          opacity: 100%;
+          margin-top: 4rem;
+        }
+        50% {
+          opacity: 10%;
+          margin-top: 3rem;
+        }
+        100% {
+          opacity: 100%;
+          margin-top: 4rem;
+        }
       }
     }
   }
