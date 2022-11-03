@@ -2,7 +2,7 @@ import s from "../../styles/developers.module.scss";
 
 export default function Developers() {
   return (
-    <div>
+    <div className={s.developersSection}>
       <div className={s.developersBG}></div>
       <div className={s.lineSection}>
         <div className={s.line}></div>

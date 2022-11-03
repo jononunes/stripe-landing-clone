@@ -15,4 +15,9 @@ November 2nd:
 
 - Payments Figures: Animated Visa Card Figure
 - Payments Figures: Animated Invoice Figure
-- Payments Figures: Graph Figure
+- Payments Figures: Pay Machine Figure
+
+November 3rd:
+
+- Payments Figures: Apple Pay Figure
+- Payments Figures: Fraud and Risk Graph Figure

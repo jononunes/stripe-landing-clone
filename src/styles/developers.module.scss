@@ -1,5 +1,9 @@
 @use "./mixin.scss" as *;
 
+.developersSection {
+  position: relative;
+  z-index: 2;
+}
 .developersBG {
   height: 130vh;
   transform: skewY(-7deg);

@@ -1,6 +1,7 @@
 import { BsFillCreditCardFill } from "react-icons/bs";
 import { AiFillBank } from "react-icons/ai";
 import { TiArrowSortedUp } from "react-icons/ti";
+import { IoIosArrowForward } from "react-icons/io";
 
 import s from "../../styles/payments.module.scss";
 
@@ -137,6 +138,106 @@ export default function Payments() {
           <div className={s.deviceContainer}>
             <TiArrowSortedUp size={20} className={s.deviceArrow} />
             <img src="./device.png" alt="" className={s.device} />
+          </div>
+          <div className={s.phoneContainer}>
+            <div className={s.phoneBackground}>
+              <div className={s.awayScreen}>
+                <img src="./awaylogo.png" alt="" className={s.awayLogo} />
+                <div className={s.cartTextContainer}>
+                  <p className={s.yourCart}>Your cart</p>
+                  <p className={s.itemCount}>2 items</p>
+                </div>
+                <div className={s.divider}></div>
+                <div className={s.item}>
+                  <img src="./bag.PNG" alt="" className={s.itemImage} />
+                  <div className={s.itemText}>
+                    <h1 className={s.itemName}>The Bigger Carry-On</h1>
+                    <p className={s.itemDescription}>Color: Navy</p>
+                    <div className={s.itemNumber}>
+                      <p>-</p>
+                      <p>1</p>
+                      <p>+</p>
+                    </div>
+                  </div>
+                  <p className={s.price}>$245.00</p>
+                </div>
+                <div className={s.divider}></div>
+                <div className={s.item}>
+                  <img src="./tag.PNG" alt="" className={s.itemImageSmall} />
+                  <div className={s.itemText}>
+                    <h1 className={s.itemName}>The Luggage Tag</h1>
+                    <p className={s.itemDescription}>Color: Sand</p>
+                    <div className={s.itemNumber}>
+                      <p>-</p>
+                      <p>1</p>
+                      <p>+</p>
+                    </div>
+                  </div>
+                  <p className={s.price}>$25.00</p>
+                </div>
+                <div className={s.bottomSection}>
+                  <div className={s.divider}></div>
+                  <div className={s.cartTextContainer}>
+                    <p className={s.yourCart}>Total</p>
+                    <p className={s.itemCount}>$270.00</p>
+                  </div>
+                  <div className={`${s.phoneButton} ${s.buttonClick}`}>
+                    <img
+                      src="./applepay.png"
+                      alt=""
+                      className={s.applePayLogo}
+                    />
+                  </div>
+                  <div className={s.phoneButton}>Checkout</div>
+                </div>
+              </div>
+            </div>
+            <div className={s.darkenScreen}></div>
+            <div className={s.payScreen}>
+              <div className={s.topSection}>
+                <img src="./applepay.png" alt="" className={s.applePayLogo} />
+                <p className={s.cancel}>Cancel</p>
+              </div>
+              <div className={s.divider}></div>
+              <div className={s.payField}>
+                <img src="./visacard.png" alt="" className={s.visaCard} />
+                <p className={s.payFieldText}>
+                  CHASE FREEDOM (**** 1234) <br />
+                  27 FREDRICK AVE BROTHERS OR
+                </p>
+                <IoIosArrowForward size={10} />
+              </div>
+              <div className={s.divider}></div>
+              <div className={s.payField}>
+                <p className={s.payFieldText}>BILLING</p>
+                <p className={s.payFieldText}>
+                  JOHN APPLESEED <br />
+                  27 FREDRICK AVE
+                  <br />
+                  BROTHERS, OR 97712 <br />
+                  UNITED STATES
+                </p>
+                <IoIosArrowForward size={10} />
+              </div>
+              <div className={s.divider}></div>
+              <div className={s.payField}>
+                <p className={s.payFieldText}>CONTACT</p>
+                <p className={s.payFieldText}>
+                  J.APPLESEED@EXAMPLE.COM <br />
+                  +1 (458) 555-2683
+                </p>
+                <IoIosArrowForward size={10} />
+              </div>
+              <div className={s.divider}></div>
+              <div className={s.payField}>
+                <p className={s.payFieldText}>PAY TOTAL</p>
+                <p className={s.payFieldText}>$250.00</p>
+              </div>
+              <img src="./faceid.gif" alt="" className={s.faceID} />
+            </div>
+          </div>
+          <div className={s.graphContainer}>
+            <img src="./fraudgraph.PNG" alt="" />
           </div>
         </div>
       </div>
