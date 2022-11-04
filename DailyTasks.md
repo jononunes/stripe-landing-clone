@@ -21,3 +21,7 @@ November 3rd:
 
 - Payments Figures: Apple Pay Figure
 - Payments Figures: Fraud and Risk Graph Figure
+
+November 4th:
+
+- Animated Code Block

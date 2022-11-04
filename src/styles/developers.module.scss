@@ -60,6 +60,7 @@
   position: absolute;
   margin: 0 17rem;
   margin-top: -50rem;
+  gap: 2.5rem;
 
   @media screen and (max-width: 900px) {
     margin: 0 2rem;
@@ -283,6 +284,302 @@
 
       .extraBtn > .arrow {
         @include arrow($clr-tertiary);
+      }
+    }
+  }
+
+  .developersRightColumn {
+    display: flex;
+    flex-direction: column;
+    min-width: 530px;
+    margin-right: -1rem;
+    font-family: "Source Code Pro", monospace;
+    .codeBlockTop {
+      background: #0c2e4e;
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 15px 0px;
+      position: relative;
+
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      display: flex;
+      min-height: 360px;
+      width: 530px;
+      z-index: 1;
+      box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+        0 30px 60px -30px rgba(0, 0, 0, 0.3);
+
+      .lineNumbers {
+        height: auto;
+        display: flex;
+        background-color: var(--cardBackground);
+        position: sticky;
+        font-size: 13px;
+        gap: 0.5rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        min-width: 38px;
+        text-align: right;
+        color: #55718d;
+        z-index: 1;
+        padding: var(--codeEditorVerticalPadding) 0;
+        min-height: 100%;
+
+        .number {
+          padding: 0 6px;
+        }
+      }
+
+      .typingArea {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0 20px;
+
+        .skipLine {
+          margin-bottom: 1.7rem;
+        }
+
+        .codeLine {
+          margin-bottom: 0.3rem;
+          width: fit-content;
+
+          .typedOut {
+            overflow: hidden;
+            border-right: 0.15em solid rgb(255, 255, 255);
+            white-space: nowrap;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            width: 0;
+
+            .purple {
+              color: #8095ff;
+              margin: 0;
+            }
+
+            .white {
+              color: #fff;
+              margin: 0;
+            }
+
+            .blue {
+              color: #00d4ff;
+              margin: 0;
+            }
+
+            .orange {
+              color: #ffa956;
+              margin: 0;
+            }
+
+            .yellow {
+              color: #ffd96a;
+              margin: 0;
+            }
+          }
+        }
+
+        .lineOne {
+          animation: typing 4s steps(60, end) forwards, blinking 0.75s infinite;
+          animation-delay: 0s;
+        }
+
+        .lineTwo {
+          animation: typing 3s steps(50, end) forwards, blinking 0.75s infinite;
+          animation-delay: 4s;
+        }
+        .lineThree {
+          animation: typing 3s steps(20, end) forwards, blinking 0.75s infinite;
+          animation-delay: 7s;
+        }
+        .lineFour {
+          animation: typing 2s steps(20, end) forwards, blinking 0.75s infinite;
+          animation-delay: 10s;
+        }
+        .lineFive {
+          animation: typing 1s steps(10, end) forwards, blinking 0.75s infinite;
+          animation-delay: 12s;
+        }
+
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+        @keyframes blinking {
+          from {
+            border-color: transparent;
+          }
+          to {
+            border-color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+    .codeBlockMiddle {
+      background: $clr-primary;
+      height: 25px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+
+      .statusLeft {
+        display: flex;
+        align-items: center;
+        .editingStatus {
+          background-color: #8095ff;
+          color: #06182c;
+          padding: 0 5px 0 8px;
+          margin: 0 9px 0 0;
+          position: relative;
+          letter-spacing: -2px;
+          font-weight: 600;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            width: 0;
+            height: 0;
+            border-left: 9px solid #8095ff;
+            border-bottom: calc(19px / 2) solid transparent;
+            border-right: 0 solid transparent;
+            border-top: calc(19px / 2) solid transparent;
+          }
+        }
+
+        .serverStatus {
+          margin: 0 0 0 10px;
+          color: #8095ff;
+        }
+      }
+
+      .statusRight {
+        display: flex;
+        align-items: stretch;
+        color: #55718d;
+
+        .percentage {
+          padding: 0 8px 0 0;
+        }
+
+        .lineIcon {
+          padding: 0 16px 0 0;
+        }
+
+        .lineProgress {
+          padding: 0 8px 0 0;
+        }
+
+        .lineIndicator {
+          padding: 0 8px 0 0;
+        }
+
+        .currentLineNo {
+          padding: 0 8px 0 0;
+        }
+      }
+    }
+    .codeBlockBottom {
+      position: relative;
+      z-index: 1;
+      height: 296px;
+      border-radius: 8px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border: 1px solid #0f395e;
+      background-color: #06182c;
+      color: #fff;
+      padding: 16px 0;
+
+      .terminalArea {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0 20px;
+
+        .terminalLine {
+          display: inline-flex;
+          margin-bottom: 0.3rem;
+          width: fit-content;
+          align-items: center;
+
+          p {
+            margin: 0;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+
+          .gray {
+            color: #55718d;
+            margin: 0;
+          }
+
+          .blue {
+            color: #00d4ff;
+          }
+
+          .typedOut {
+            overflow: hidden;
+            border-right: 0.15em solid rgb(255, 255, 255);
+            white-space: nowrap;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            animation: typing 2s steps(40, end) forwards,
+              blinking 0.75s infinite;
+            animation-delay: 14s;
+            width: 0;
+
+            .white {
+              color: #fff;
+              margin: 0;
+            }
+
+            .purple {
+              color: #8095ff;
+              margin: 0;
+            }
+          }
+        }
+
+        .appearFirst {
+          animation: appear 17s;
+        }
+        .appearSecond {
+          animation: appear 17.5s;
+        }
+        .appearThird {
+          animation: appear 18s;
+        }
+        .appearFourth {
+          animation: appear 18.5s;
+        }
+
+        @keyframes appear {
+          0% {
+            opacity: 0;
+          }
+          99% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
       }
     }
   }

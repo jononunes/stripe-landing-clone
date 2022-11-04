@@ -1,3 +1,5 @@
+import { IoIosArrowForward } from "react-icons/io";
+
 import s from "../../styles/developers.module.scss";
 
 export default function Developers() {
@@ -59,7 +61,109 @@ export default function Developers() {
             </div>
           </div>
         </div>
-        <div className={s.developersRightColumn}></div>
+        <div className={s.developersRightColumn}>
+          <div className={s.codeBlockTop}>
+            <div className={s.lineNumbers}>
+              <span className={s.number}>1</span>
+              <span className={s.number}>2</span>
+              <span className={s.number}>3</span>
+              <span className={s.number}>4</span>
+              <span className={s.number}>5</span>
+              <span className={s.number}>6</span>
+            </div>
+            <div className={s.typingArea}>
+              <div className={s.codeLine}>
+                <div className={`${s.typedOut} ${s.lineOne}`}>
+                  <p className={s.purple}>const&nbsp;</p>
+                  <p className={s.white}>stripe =&nbsp;</p>
+                  <p className={s.blue}>require&nbsp;</p>
+                  <p className={s.white}>(</p>
+                  <p className={s.orange}>'stripe'</p>
+                  <p className={s.white}>)(</p>
+                  <p className={s.orange}>'sk_test_BQokikJOvBi2Hl4olfQ2'</p>
+                  <p className={s.white}>);</p>
+                </div>
+              </div>
+              <div className={s.skipLine}></div>
+              <div className={s.codeLine}>
+                <div className={`${s.typedOut} ${s.lineTwo}`}>
+                  <p className={s.purple}>await&nbsp;</p>
+                  <p className={s.white}>stripe.paymentIntents.</p>
+                  <p className={s.blue}>create&nbsp;</p>
+                  <p className={s.white}>(&#123;</p>
+                </div>
+              </div>
+              <div className={s.codeLine}>
+                <div className={`${s.typedOut} ${s.lineThree}`}>
+                  <p className={s.white}>&nbsp; amount: &nbsp;</p>
+                  <p className={s.yellow}>2000</p>
+                  <p className={s.white}>,</p>
+                </div>
+              </div>
+              <div className={s.codeLine}>
+                <div className={`${s.typedOut} ${s.lineFour}`}>
+                  <p className={s.white}>&nbsp; currency: &nbsp;</p>
+                  <p className={s.orange}>'usd'</p>
+                </div>
+              </div>
+              <div className={s.codeLine}>
+                <div className={`${s.typedOut} ${s.lineFive}`}>
+                  <p className={s.white}>&#125;);</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={s.codeBlockMiddle}>
+            <div className={s.statusLeft}>
+              <div className={s.editingStatus}>NORMAL</div>
+              <div className={s.serverStatus}>server.js</div>
+            </div>
+            <div className={s.statusRight}>
+              <div className={s.percentage}>100%</div>
+              <div className={s.lineIcon}>☰</div>
+              <div className={s.lineProgress}>6/6</div>
+              <div className={s.lineIndicator}>lin : </div>
+              <div className={s.currentLineNo}>4</div>
+            </div>
+          </div>
+          <div className={s.codeBlockBottom}>
+            <div className={s.terminalArea}>
+              <div className={s.terminalLine}>
+                <div className={s.typedOut}>
+                  <p className={s.purple}>$ &nbsp;</p>
+                  <p className={s.white}>
+                    node server.js &amp;&amp; stripe listen
+                  </p>
+                </div>
+              </div>
+              <div className={`${s.terminalLine} ${s.appearFirst}`}>
+                <p>
+                  {" "}
+                  <IoIosArrowForward size={13} className={s.arrow} /> Ready!
+                  Waiting for requests...
+                </p>
+              </div>
+              <div className={`${s.terminalLine} ${s.appearSecond}`}>
+                <p className={s.gray}>2022-11-05 14:05:44 &nbsp;</p>
+                <p>[</p>
+                <p className={s.blue}>200</p>
+                <p>] payment_intent.created</p>
+              </div>
+              <div className={`${s.terminalLine} ${s.appearThird}`}>
+                <p className={s.gray}>2022-11-05 14:05:44 &nbsp;</p>
+                <p>[</p>
+                <p className={s.blue}>200</p>
+                <p>] charge.succeeded</p>
+              </div>
+              <div className={`${s.terminalLine} ${s.appearFourth}`}>
+                <p className={s.gray}>2022-11-05 14:05:44 &nbsp;</p>
+                <p>[</p>
+                <p className={s.blue}>200</p>
+                <p>] payment_intent.succeeded</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
