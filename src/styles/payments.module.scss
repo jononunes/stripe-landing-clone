@@ -4,12 +4,16 @@
   background-color: #f6f9fc;
   height: 200vh;
 
-  @media screen and (max-width: 600px) {
-    height: 135vh;
+  @media screen and (max-width: 900px) {
+    height: 140vh;
   }
 
-  @media screen and (max-width: 400px) {
-    height: 160vh;
+  @media screen and (max-width: 600px) {
+    height: 200vh;
+  }
+
+  @media screen and (max-width: 420px) {
+    height: 210vh;
   }
 
   .paymentsTextContainer {
@@ -106,6 +110,25 @@
     grid: auto/repeat(3, 1fr);
     margin: 5rem 16rem;
     z-index: 2;
+
+    @media screen and (max-width: 900px) {
+      margin: 0;
+      scale: 0.8;
+      margin-left: -5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin: 0;
+      scale: 0.6;
+      margin-left: -6rem;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin: 0;
+      scale: 0.35;
+      margin-left: -11rem;
+      margin-top: -10rem;
+    }
 
     .visaCardContainer {
       position: relative;
