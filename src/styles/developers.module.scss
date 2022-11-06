@@ -11,15 +11,15 @@
   margin-top: -110px;
 
   @media screen and (max-width: 900px) {
-    height: 110vh;
+    height: 120vh;
   }
 
   @media screen and (max-width: 600px) {
-    height: 130vh;
+    height: 235vh;
   }
 
-  @media screen and (max-width: 400px) {
-    height: 170vh;
+  @media screen and (max-width: 380px) {
+    height: 275vh;
   }
 }
 
@@ -64,11 +64,17 @@
 
   @media screen and (max-width: 900px) {
     margin: 0 2rem;
-    margin-top: -60rem;
+    margin-top: -75rem;
   }
 
   @media screen and (max-width: 600px) {
-    margin-top: -70rem;
+    margin-top: -120rem;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-top: -110rem;
+    flex-direction: column;
   }
 
   .developersLeftColumn {
@@ -83,6 +89,10 @@
       font-size: 40px;
       font-weight: 600;
       letter-spacing: -2px;
+
+      @media screen and (max-width: 420px) {
+        font-size: 28px;
+      }
     }
 
     .text {
@@ -91,6 +101,11 @@
       font-weight: 500;
       line-height: 30px;
       letter-spacing: -1px;
+
+      @media screen and (max-width: 420px) {
+        font-size: 12px;
+        line-height: 20px;
+      }
     }
 
     .btn {
@@ -170,6 +185,10 @@
       .integrationsIcon {
         display: flex;
         padding-bottom: 2.5rem;
+
+        @media screen and (max-width: 900px) {
+          padding-bottom: 4.5rem;
+        }
 
         .cubeBlue {
           position: absolute;
@@ -294,6 +313,15 @@
     min-width: 530px;
     margin-right: -1rem;
     font-family: "Source Code Pro", monospace;
+
+    @media screen and (max-width: 900px) {
+      min-width: 400px;
+      max-width: 400px;
+    }
+    @media screen and (max-width: 400px) {
+      min-width: 100px;
+      max-width: 330px;
+    }
     .codeBlockTop {
       background: #0c2e4e;
       border-radius: 8px;
@@ -305,7 +333,7 @@
       border-bottom-right-radius: 0;
       display: flex;
       min-height: 360px;
-      width: 530px;
+      // width: 530px;
       z-index: 1;
       box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
         0 30px 60px -30px rgba(0, 0, 0, 0.3);
@@ -356,6 +384,8 @@
             font-weight: 500;
             display: flex;
             width: 0;
+            opacity: 0%;
+            border-color: transparent;
 
             .purple {
               color: #8095ff;
@@ -390,19 +420,19 @@
         }
 
         .lineTwo {
-          animation: typing 3s steps(50, end) forwards, blinking 0.75s infinite;
+          animation: typing 3s steps(50, end) forwards, blinking 0.75s 4;
           animation-delay: 4s;
         }
         .lineThree {
-          animation: typing 3s steps(20, end) forwards, blinking 0.75s infinite;
+          animation: typing 3s steps(20, end) forwards, blinking 0.75s 4;
           animation-delay: 7s;
         }
         .lineFour {
-          animation: typing 2s steps(20, end) forwards, blinking 0.75s infinite;
+          animation: typing 2s steps(20, end) forwards, blinking 0.75s 3;
           animation-delay: 10s;
         }
         .lineFive {
-          animation: typing 1s steps(10, end) forwards, blinking 0.75s infinite;
+          animation: typing 1s steps(10, end) forwards, blinking 0.75s 2;
           animation-delay: 12s;
         }
 
@@ -413,6 +443,12 @@
           to {
             width: 100%;
           }
+          1% {
+            opacity: 100%;
+          }
+          100% {
+            opacity: 100%;
+          }
         }
         @keyframes blinking {
           from {
@@ -420,6 +456,17 @@
           }
           to {
             border-color: rgb(255, 255, 255);
+          }
+        }
+        @keyframes hideCursor {
+          0% {
+            opacity: 0%;
+          }
+          99% {
+            opacity: 0%;
+          }
+          100% {
+            opacity: 100%;
           }
         }
       }
@@ -521,6 +568,10 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+
+            @media screen and (max-width: 900px) {
+              font-size: 9px;
+            }
           }
 
           .gray {
