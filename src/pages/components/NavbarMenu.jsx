@@ -272,7 +272,7 @@ export default function NavbarMenu({ index, setNavMenu }) {
                 <h1 className={s.subLinkText}>Ecommerce</h1>
               </li>
               <li className={s.subMenuLink}>
-                <img src="./Saas.png" alt="" className={s.subLinkIcon} />
+                <img src="./Saas.PNG" alt="" className={s.subLinkIcon} />
                 <h1 className={s.subLinkText}>SaaS</h1>
               </li>
               <li className={s.subMenuLink}>
