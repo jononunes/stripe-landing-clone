@@ -13,12 +13,12 @@ export default function WhyStripe() {
           <div className={s.column}>
             <div className={s.closeIcon}>
               <div className={s.triangles}>
-                <img src="./triangleBlue.png" alt="" className={s.triangle} />
-                <img src="./triangleBlue.png" alt="" className={s.triangle} />
-                <img src="./triangleBlue.png" alt="" className={s.triangle} />
-                <img src="./triangleBlue.png" alt="" className={s.triangle} />
-                <img src="./triangleBlue.png" alt="" className={s.triangle} />
-                <img src="./triangleBlue.png" alt="" className={s.triangle} />
+                <img src="./triangleblue.png" alt="" className={s.triangle} />
+                <img src="./triangleblue.png" alt="" className={s.triangle} />
+                <img src="./triangleblue.png" alt="" className={s.triangle} />
+                <img src="./triangleblue.png" alt="" className={s.triangle} />
+                <img src="./triangleblue.png" alt="" className={s.triangle} />
+                <img src="./triangleblue.png" alt="" className={s.triangle} />
               </div>
               <div className={s.circles}>
                 <div className={s.circle}></div>
@@ -56,13 +56,13 @@ export default function WhyStripe() {
             <div className={s.monitorIcon}>
               <div className={s.monitorContainer}>
                 <img
-                  src="./monitorCircle.png"
+                  src="./monitorcircle.png"
                   alt=""
                   className={s.monitorCircle}
                 />
-                <img src="./monitorLine.png" alt="" className={s.monitorLine} />
+                <img src="./monitorline.png" alt="" className={s.monitorLine} />
               </div>
-              <img src="./tickCircle.png" alt="" className={s.tickCircle} />
+              <img src="./tickcircle.png" alt="" className={s.tickCircle} />
             </div>
             <h2 className={s.columnHeading}>Battle-tested reliability</h2>
             <p className={s.text}>

@@ -78,9 +78,11 @@ export default function Developers() {
                   <p className={s.white}>stripe =&nbsp;</p>
                   <p className={s.blue}>require&nbsp;</p>
                   <p className={s.white}>(</p>
-                  <p className={s.orange}>'stripe'</p>
+                  <p className={s.orange}>&apos;stripe&apos;</p>
                   <p className={s.white}>)(</p>
-                  <p className={s.orange}>'sk_test_BQokikJOvBi2Hl4olfQ2'</p>
+                  <p className={s.orange}>
+                    &apos;sk_test_BQokikJOvBi2Hl4olfQ2&apos;
+                  </p>
                   <p className={s.white}>);</p>
                 </div>
               </div>
@@ -103,7 +105,7 @@ export default function Developers() {
               <div className={s.codeLine}>
                 <div className={`${s.typedOut} ${s.lineFour}`}>
                   <p className={s.white}>&nbsp; currency: &nbsp;</p>
-                  <p className={s.orange}>'usd'</p>
+                  <p className={s.orange}>&apos;usd&apos;</p>
                 </div>
               </div>
               <div className={s.codeLine}>

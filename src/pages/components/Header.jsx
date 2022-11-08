@@ -136,7 +136,7 @@ export default function Header() {
           <div className={s.heroFigureContainer}>
             <div className={s.phoneContainer}>
               <div className={s.phoneBackground}>
-                <img src="./cards.png" alt="" className={s.cardsImage} />
+                <img src="./cards.PNG" alt="" className={s.cardsImage} />
                 <p className={s.description}>Increment Magazine</p>
                 <p className={s.price}>$14 per quarter</p>
                 <div className={s.phoneButton}>
