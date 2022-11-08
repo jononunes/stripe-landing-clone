@@ -2,7 +2,7 @@ import { FiMenu } from "react-icons/fi";
 import { IoIosArrowDown, IoIosSearch } from "react-icons/io";
 import { BsCalendarFill } from "react-icons/bs";
 import { AiFillCreditCard } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import s from "../../styles/header.module.scss";
 import MobileMenu from "./MobileMenu";
@@ -17,6 +17,55 @@ export default function Header() {
   const toggleMobileMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    let c = document.getElementById("canv");
+    let $ = c.getContext("2d");
+
+    let col = function (x, y, r, g, b) {
+      $.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+      $.fillRect(x, y, 1, 1);
+    };
+    let R = function (x, y, t) {
+      return Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t));
+    };
+
+    let G = function (x, y, t) {
+      return Math.floor(
+        132 +
+          64 *
+            Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)
+      );
+    };
+
+    let B = function (x, y, t) {
+      return Math.floor(
+        192 +
+          64 *
+            Math.sin(
+              5 * Math.sin(t / 9) +
+                ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100
+            )
+      );
+    };
+
+    let t = 0;
+    let x;
+    let y;
+
+    let run = function () {
+      for (x = 0; x <= 35; x++) {
+        for (y = 0; y <= 35; y++) {
+          col(x, y, R(x, y, t), G(x, y, t), B(x, y, t));
+        }
+      }
+      t = t + 0.03;
+      window.requestAnimationFrame(run);
+    };
+
+    run();
+  }, []);
+
   return (
     <div>
       <div className={s.lineSection}>
@@ -26,7 +75,7 @@ export default function Header() {
         <div className={s.line}></div>
         <div className={s.line}></div>
       </div>
-      <canvas className={s.gradient}></canvas>
+      <canvas id="canv" className={s.gradient} width={32} height={32}></canvas>
       <div className={s.navContainer}>
         <div className={s.navbar}>
           <img src="./logo.png" className={s.logo} />
@@ -59,10 +108,16 @@ export default function Header() {
 
         <div className={s.heroContainer}>
           <div className={s.heroTextContainer}>
-            <h1 className={s.title}>
-              Financial <br /> infrastructure <br />
-              for the internet
-            </h1>
+            <div className={s.titleContainer}>
+              <h1 className={s.title}>
+                Financial <br /> infrastructure <br />
+                for the internet
+              </h1>
+              <p className={`${s.title} ${s.overlay}`}>
+                Financial <br />
+                infrastructure <br /> for the internet
+              </p>
+            </div>
             <p className={s.text}>
               Millions of companies of all sizes—from startups to Fortune <br />
               500s—use Stripe&apos;s software and APIs to accept payments,{" "}

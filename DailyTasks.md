@@ -25,3 +25,14 @@ November 3rd:
 November 4th:
 
 - Animated Code Block
+
+November 7th:
+
+- Code block media queries
+- Payments figures media queries
+- Refining top gradient
+
+November 8th:
+
+- Refining top gradient
+- Gradient text overlay effect
