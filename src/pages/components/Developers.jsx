@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 import s from "../../styles/developers.module.scss";
@@ -6,6 +7,7 @@ export default function Developers() {
   return (
     <div className={s.developersSection}>
       <div className={s.developersBG}></div>
+      <div id="globeViz"></div>
       <div className={s.lineSection}>
         <div className={s.line}></div>
         <div className={s.line}></div>
